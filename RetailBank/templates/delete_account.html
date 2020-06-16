@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+            	<div class="form-group">
+                    {{ form.customer_id.label(class="form-control-label") }}
+                    {{ form.customer_id(class="form-control form-control-lg") }}
+                </div>
+
+                <p>Account Type : {{ account_type }}</p>
+
+                <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            	</div>
+            </fieldset>
+ </form>
+{% endblock content %}
